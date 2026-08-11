@@ -270,6 +270,10 @@
   pointer-events: none;
 }
 
+.hero-media video {
+  background: #050607 url('/assets/hero-video-poster.jpg') center / cover no-repeat;
+}
+
 .hero-media .particle {
   z-index: 2;
 }

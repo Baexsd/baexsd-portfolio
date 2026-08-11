@@ -343,7 +343,7 @@ function App() {
             loop
             playsInline
             preload="auto"
-            poster="/assets/hero-world.png"
+            poster="/assets/hero-video-poster.jpg"
             onLoadedMetadata={event => setVideoDuration(event.currentTarget.duration)}
             onTimeUpdate={event => setVideoProgress(event.currentTarget.currentTime)}
             onPlay={() => setIsPlaying(true)}
