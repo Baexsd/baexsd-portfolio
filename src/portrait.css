@@ -346,6 +346,10 @@
   position: relative;
 }
 
+.project-image::after {
+  pointer-events: none;
+}
+
 .project-video video {
   display: block;
   object-fit: contain;

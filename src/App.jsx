@@ -158,7 +158,7 @@ function ProjectVideo({ src, poster, title }) {
   }, [])
 
   return (
-    <div className="project-video" ref={wrapRef} onMouseMove={() => !controlsVisible && setControlsVisible(true)}>
+    <div className="project-video" ref={wrapRef} onPointerMove={() => !controlsVisible && setControlsVisible(true)}>
       <video
         ref={videoRef}
         autoPlay
