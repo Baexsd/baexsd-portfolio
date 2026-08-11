@@ -156,7 +156,7 @@ function App() {
 
       <section className="work section" id="work">
         <div className="shell">
-          <div className="section-heading"><div className="section-kicker"><span>02</span> SELECTED WORK / 精选项目</div><h2>把想法做成<br/><i>可玩的系统。</i></h2></div>
+          <div className="section-heading"><div className="section-kicker"><span>02</span> SELECTED WORK / 精选项目</div><h2>我的<br/><i>精选项目</i></h2></div>
           <div className="projects">
             {projects.map((p) => <article className="project" key={p.no}>
               <div className="project-info">
@@ -173,9 +173,9 @@ function App() {
 
       <section className="strength section shell" id="strength">
         <Grainient className="strength-grainient" color1="#294f87" color2="#172d50" color3="#080b11" />
-        <div className="section-heading split"><div className="section-kicker"><span>03</span> CAPABILITIES / 个人优势</div><h2>技术是骨架，<br/><i>体验是方向。</i></h2></div>
-        <div className="strength-grid">{strengths.map(({icon:Icon, ...s}) => <article key={s.num}>
-          <div className="cap-top"><span>/{s.num}</span><Icon size={25}/></div><h3>{s.title}</h3><p>{s.text}</p>
+        <div className="section-heading split"><div className="section-kicker"><span>03</span> CAPABILITIES / 个人优势</div><h2>我的<br/><i>核心优势</i></h2></div>
+        <div className="strength-grid">{strengths.map((s) => <article key={s.num}>
+          <h3>{s.title}</h3><p>{s.text}</p>
         </article>)}</div>
         <div className="toolbelt"><span>UNITY</span><span>C#</span><span>C++</span><span>UGUI</span><span>SHADER GRAPH</span><span>NAVMESH</span><span>GIT</span></div>
       </section>

@@ -21,15 +21,15 @@
 .nav nav {
   display: grid;
   grid-template-columns: repeat(3, minmax(100px, 1fr));
-  width: clamp(380px, 42vw, 720px);
-  gap: 0;
+  width: clamp(480px, 50vw, 860px);
+  gap: clamp(16px, 2.4vw, 46px);
   text-align: center;
 }
 
 .nav nav a {
   padding: 18px 24px;
   color: #eef2f5;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.14em;
   text-shadow: 0 1px 12px rgba(0, 0, 0, 0.75);
@@ -187,6 +187,50 @@
   inset: 0 -5vw;
   background: linear-gradient(180deg, rgba(9, 10, 10, 0.42), rgba(9, 10, 10, 0.68));
   pointer-events: none;
+}
+
+.strength-grid {
+  margin-top: 110px;
+}
+
+.strength-grid article {
+  position: relative;
+  min-height: 330px;
+  padding: 48px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.strength-grid article h3 {
+  position: absolute;
+  top: -76px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  color: #f2f5f7;
+  font-size: clamp(24px, 1.8vw, 32px);
+  text-align: center;
+}
+
+.strength-grid article p {
+  max-width: 360px;
+  margin: 0;
+  color: #c4ccd2;
+  font-size: clamp(17px, 1.2vw, 21px);
+  line-height: 1.9;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .strength-grid {
+    margin-top: 40px;
+  }
+
+  .strength-grid article h3 {
+    position: static;
+    margin-bottom: 28px;
+  }
 }
 
 .hero-media,
