@@ -93,7 +93,7 @@ function ProjectVideo({ src, poster, title }) {
   const autoPausedRef = useRef(false)
   const manuallyPausedRef = useRef(false)
   const [isMuted, setIsMuted] = useState(true)
-  const [isPlaying, setIsPlaying] = useState(true)
+  const [isPlaying, setIsPlaying] = useState(false)
   const [controlsVisible, setControlsVisible] = useState(true)
   const [progress, setProgress] = useState(0)
   const [duration, setDuration] = useState(0)
@@ -174,6 +174,7 @@ function ProjectVideo({ src, poster, title }) {
         onPause={() => setIsPlaying(false)}
       ><source src={src} type="video/mp4" /></video>
       <div className="hero-video-tint"/>
+      {!isPlaying && <button className="video-start-button" type="button" onClick={togglePlayback}><Play size={20}/> 点击播放</button>}
       <div className={`hero-video-controls project-video-controls${controlsVisible ? '' : ' is-hidden'}`}>
         <button type="button" onClick={togglePlayback} aria-label={isPlaying ? '暂停视频' : '播放视频'}>{isPlaying ? <Pause size={16}/> : <Play size={16}/>}</button>
         <span>{formatTime(progress)}</span>
@@ -193,7 +194,7 @@ function App() {
   const autoPausedRef = useRef(false)
   const manuallyPausedRef = useRef(false)
   const [isMuted, setIsMuted] = useState(true)
-  const [isPlaying, setIsPlaying] = useState(true)
+  const [isPlaying, setIsPlaying] = useState(false)
   const [controlsVisible, setControlsVisible] = useState(false)
   const [controlsReady, setControlsReady] = useState(false)
   const [videoProgress, setVideoProgress] = useState(0)
@@ -205,7 +206,7 @@ function App() {
     if (video.paused) {
       manuallyPausedRef.current = false
       autoPausedRef.current = false
-      video.play()
+      video.play().catch(() => setIsPlaying(false))
     } else {
       manuallyPausedRef.current = true
       video.pause()
@@ -352,6 +353,7 @@ function App() {
           <div className="particle p1"/><div className="particle p2"/><div className="particle p3"/>
         </div>
         <div className="hero-shade" />
+        {!isPlaying && <button className="video-start-button hero-start-button" type="button" onClick={togglePlayback}><Play size={20}/> 点击播放</button>}
         <div className="hero-content shell">
           <div className="eyebrow"><span className="live-dot"/> AVAILABLE FOR OPPORTUNITIES · 2026</div>
           <div className="hero-particle-title">
