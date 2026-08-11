@@ -233,6 +233,40 @@
   }
 }
 
+.about-copy .intro {
+  margin: 70px 0 78px;
+  max-width: 760px;
+  font-size: clamp(17px, 1.15vw, 21px);
+  line-height: 2.05;
+}
+
+.about-copy .education {
+  padding: 34px 0;
+}
+
+.about-copy .education > span {
+  font-size: 14px;
+}
+
+.about-copy .education b {
+  font-size: 21px;
+}
+
+.about-copy .education small {
+  font-size: 16px;
+}
+
+.about-copy .contact-lines {
+  margin-top: 48px;
+  gap: 38px;
+  font-size: 16px;
+}
+
+.about-copy .contact-lines svg {
+  width: 19px;
+  height: 19px;
+}
+
 .hero-media,
 .hero-particle-title,
 .project-image,
