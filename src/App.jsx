@@ -36,7 +36,7 @@ const projects = [
   },
   {
     no: '02', title: '我的 2D 肉鸽游戏', en: 'ROGUELIKE PROTOCOL', period: '2026.04 — 至今', role: 'UNITY 开发工程师 / 总策划',
-    image: '/assets/project-roguelike.png', video: '/assets/project-roguelike.mp4', status: '开发中',
+    image: '/assets/project-roguelike.png', video: '/assets/project-roguelike-v2.mp4', status: '开发中',
     desc: '2D 俯视角肉鸽游戏。以技能构筑、程序化探索和局外成长为支点，让每一轮升级选择都形成可感知的战斗路线。',
     tags: ['Fisher–Yates', '事件中心', '技能构筑', '存档系统', '模块解耦'],
     contributions: [
@@ -343,12 +343,12 @@ function App() {
             loop
             playsInline
             preload="auto"
-            poster="/assets/hero-video-poster.jpg"
+            poster="/assets/hero-video-poster-v2.jpg"
             onLoadedMetadata={event => setVideoDuration(event.currentTarget.duration)}
             onTimeUpdate={event => setVideoProgress(event.currentTarget.currentTime)}
             onPlay={() => setIsPlaying(true)}
             onPause={() => setIsPlaying(false)}
-          ><source src="/assets/portfolio-hero.mp4" type="video/mp4" /></video>
+          ><source src="/assets/portfolio-hero-v2.mp4" type="video/mp4" /></video>
           <div className="hero-video-tint"/>
           <div className="particle p1"/><div className="particle p2"/><div className="particle p3"/>
         </div>
