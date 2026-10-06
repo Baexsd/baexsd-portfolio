@@ -68,7 +68,7 @@ const strengths = [
   { icon: Code2, num: '01', title: '工程落地', text: '熟悉 C#、Unity 与常用设计模式，能独立完成状态机、事件中心、对象池和数据持久化模块。', tags: ['C#', 'Unity', 'FSM', '对象池'] },
   { icon: Cpu, num: '02', title: '系统思维', text: '从玩法目标反推技术结构，让 AI、战斗、成长与资源循环在可维护的框架中协同工作。', tags: ['战斗系统', 'AI 行为', '成长循环', '资源设计'] },
   { icon: Layers3, num: '03', title: '策划 × 开发', text: '不仅实现功能，也拆解玩家路径、反馈节奏与构筑空间，让设计意图准确落到手感与体验。', tags: ['玩家路径', '反馈节奏', '技能构筑', '体验验证'] },
-  { icon: Gamepad2, num: '04', title: '玩家洞察', text: '1900+ 小时 Steam 游戏体验，深耕模拟经营、养成叙事，并广泛涉猎 4X、JRPG 等品类。', tags: ['模拟经营', '养成叙事', '4X 战略', 'JRPG'] },
+  { icon: Gamepad2, num: '04', title: '玩家洞察', text: '2000+ 小时 Steam 游戏体验，深耕模拟经营、养成叙事，并广泛涉猎 4X、JRPG 等品类。', tags: ['模拟经营', '养成叙事', '4X 战略', 'JRPG'] },
 ]
 
 function Brand() {
@@ -387,14 +387,14 @@ function App() {
             <div className="education"><span>2023 — 2027</span><div><b>江西财经大学</b><small>虚拟现实技术 · 本科</small></div></div>
             <div className="contact-lines">
               <a href="tel:15259767521"><Phone size={15}/> 152 5976 7521</a>
-              <a href="mailto:1909942822@qq.com"><Mail size={15}/> 1909942822@qq.com</a>
+              <a href="mailto:ba1_xsd@qq.com"><Mail size={15}/> ba1_xsd@qq.com</a>
               <span><MapPin size={15}/> 福建 · 泉州</span>
             </div>
           </div>
           <div className="stats">
             <div><strong>02</strong><span>完整游戏项目</span></div>
-            <div><strong>1900<span>+</span></strong><span>STEAM 游戏时长</span></div>
-            <div><strong>03<span>+</span></strong><span>核心系统独立实现</span></div>
+            <div><strong>2000<span>+</span></strong><span>STEAM 游戏时长</span></div>
+            <div><strong>05<span>+</span></strong><span>核心系统独立实现</span></div>
             <div><strong>462</strong><span>CET-4</span></div>
           </div>
         </div>
@@ -440,7 +440,7 @@ function App() {
           <div className="section-kicker"><span>04</span> START A CONVERSATION</div>
           <div className="contact-title"><h2><AnimatedText>感谢您观看</AnimatedText><br/><AnimatedText offset={5}>我的简历兼作品集</AnimatedText></h2></div>
           <div className="contact-bottom">
-            <a href="mailto:1909942822@qq.com">1909942822@qq.com <ArrowUpRight size={22}/></a>
+            <a href="mailto:ba1_xsd@qq.com">ba1_xsd@qq.com <ArrowUpRight size={22}/></a>
             <div><span>PHONE</span><b>+86 152 5976 7521</b></div>
             <div><span>LOCATION / 所在地</span><b>福建省 · 泉州市</b></div>
           </div>
